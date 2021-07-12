@@ -23,13 +23,14 @@ const AddProduct = () => {
       imageURL: imageURL,
     };
     const url = `https://apple-crumble-08839.herokuapp.com/addProduct`;
-    fetch(url, {
+    fetch(url, 
+      {
       method: "POST",
       headers: {
         "content-type": "application/json",
       },
       body: JSON.stringify(productData),
-    }).then((res) => console.log("Server Side Response"));
+    }).then((res) => console.log("Server Side Responsed"));
 
     console.log(productData);
 
